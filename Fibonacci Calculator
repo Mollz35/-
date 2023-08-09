@@ -1,0 +1,28 @@
+using System; // Это системаная библиотека СИСТЕМ
+using System.Text; // Это системная библиотека ТЕКСТ
+
+namespace FactorialFibonaccy // Это имя файла программы
+{
+    internal class Program // Это класс программы
+    {
+        static void Main(string [] args) // Это писала програма
+         {
+            Double Factorial(Double n) // Это ввод факториала "Н"
+         {
+                if (n == 1) return 1; return n * Factorial(n - 1);
+         }
+        link: // Это команда ЛИНКß
+            Console.WriteLine("Укажите число");
+            Double x;
+            bool y = Double.TryParse (Console.ReadLine (), out x);
+            if (!y || x == 0) // Это математика
+         {
+                Console.WriteLine("ZERO"); // Это рулетка
+                goto link; // Это G-basik из игры МАГИСТР
+         }
+            Double factorialx = Factorial(x); // Это математика
+            Console.WriteLine($"Факториал числа {x} = {factorialx}");
+            goto link; // Это флажок из БЕЙСИК
+        }
+    }
+}
